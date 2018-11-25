@@ -31,7 +31,7 @@ def preprocess(docs, nlp, min_length, min_counts, max_counts):
         return a
     
     stop_words = []
-    with open('listfile1.txt', 'r',encoding='utf-8') as filehandle:  
+    with open('stop_words.txt', 'r',encoding='utf-8') as filehandle:  
         for line in filehandle:
             current = line[:-1]
             stop_words.append(current)
