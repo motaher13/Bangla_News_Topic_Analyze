@@ -34,6 +34,7 @@ nlp = spacy.load('en')
 
 dataset = fetch_data_groups(data_home='D:/code python/LDA2vec/bangla news/data')
 docs = dataset['data']
+print(docs[0])
 docs = [(i, doc) for i, doc in enumerate(docs)]
 
 
